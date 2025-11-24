@@ -1,0 +1,20 @@
+[33m51c0ece[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Task 2.3: Remove frmt variable and extract usd method
+[33m18c6908[m Task 2.2
+[33mf3a3a6e[m Task 2.2 get volume credits
+[33mba05f23[m Task 2.2 rip
+[33m9142750[m Task 2.2
+[33m86625e5[m Task 2.1: Extract getAmount method and refactor parameters
+[33medaa8d3[m Task 2.1
+[33m5be22dd[m Task2
+[33m3ae1f6d[m refactor switch
+[33m4be3b21[m Task 1.2: update git log
+[33md60b90f[m Task 1.1 rip
+[33m427a18a[m Task 1.1 more encap
+[33m2cdaa74[m Task 1.1 encapsulate
+[33m3028bc0[m Task 1.1
+[33m2b4f164[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+[33mff5004e[m adding shortcut keys for Inline Variable (Re: Piazza question)
+[33mb545fe2[m clarifying extracted method names in README.md
+[33ma0124c9[m fixing starter file
+[33mc8d9d38[m adding starter files
+[33mcbe4517[m first commit
