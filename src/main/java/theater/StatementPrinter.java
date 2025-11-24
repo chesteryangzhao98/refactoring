@@ -30,15 +30,8 @@ public class StatementPrinter {
      */
 
     public String statement() {
-        int volumeCredits = 0;
-        for (Performance p : invoice.getPerformances()) {
-            volumeCredits += getVolumeCredits(p);
-        }
-
-        int totalAmount = 0;
-        for (Performance p : invoice.getPerformances()) {
-            totalAmount += getAmount(p);
-        }
+        final int volumeCredits = getTotalVolumeCredits();
+        final int totalAmount = getTotalAmount();
 
         final StringBuilder result = new StringBuilder("Statement for " + invoice.getCustomer()
                 + System.lineSeparator());
@@ -56,6 +49,22 @@ public class StatementPrinter {
 
     private static String usd(int totalAmount) {
         return NumberFormat.getCurrencyInstance(Locale.US).format(totalAmount / Constants.PERCENT_FACTOR);
+    }
+
+    private int getTotalAmount() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getAmount(performance);
+        }
+        return result;
+    }
+
+    private int getTotalVolumeCredits() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getVolumeCredits(performance);
+        }
+        return result;
     }
 
     private int getVolumeCredits(Performance performance) {
