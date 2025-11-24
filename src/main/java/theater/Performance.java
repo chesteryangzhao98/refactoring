@@ -13,10 +13,11 @@ public class Performance {
         this.audience = audience;
     }
 
-    //accessor methods
+    // accessor methods
     public String getPlayID() {
         return playID;
     }
+
     public int getAudience() {
         return audience;
     }

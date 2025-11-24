@@ -1,5 +1,8 @@
 package theater;
 
+/**
+ * Represents a theatrical play with a name and type.
+ */
 
 public class Play {
 
@@ -7,6 +10,7 @@ public class Play {
     private String type;
 
     /**
+     * Constructs a new Play instance.
      * @param name the name of the play
      * @param type the genre of the play
      *
@@ -19,6 +23,7 @@ public class Play {
     public String getName() {
         return name;
     }
+
     public String getType() {
         return type;
     }
